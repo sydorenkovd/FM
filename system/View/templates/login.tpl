@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="icon" type="image/gif" href="{{ registry.uri }}favicon.png" />
-<meta name="description" content="Ostora filemanager" />
-<meta name="keywords" content="Ostora filemanager" />
-<title>Ostora filemanager</title>
+<meta name="description" content="Sydorenkovd filemanager" />
+<meta name="keywords" content="Sydorenkovd filemanager" />
+<title>Sydorenkovd filemanager</title>
 <style>
 @charset "utf-8";
 /* CSS Document */

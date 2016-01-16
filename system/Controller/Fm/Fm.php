@@ -2,7 +2,7 @@
 class Controller_Fm_Fm extends Engine_Controller {
 
 	public function index() {
-		$this->view->setTitle("Ostora Filemanager");
+		$this->view->setTitle("Sydorenkovd Filemanager");
 		
 		$file = new Model_File();
 		$file->showTree(0);
