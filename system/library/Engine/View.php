@@ -30,6 +30,18 @@ class Engine_View extends Engine_Interface {
 	
 		return $template;
 	}
+//    function myTempl($template) {
+//        $dirClass = explode("_", $template);
+//
+//        if (sizeof($dirClass) > 1) {
+//            $template = implode(DIRECTORY_SEPARATOR, $dirClass) . '.tpl';
+//        } else
+//        {
+//            $template = $template . '.tpl';
+//        };
+//
+//        include $template;
+//    }
 
 	public function __call($name, $params) {
         $param = array("registry" => $this->registry);

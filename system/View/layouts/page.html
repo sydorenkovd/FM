@@ -34,14 +34,14 @@
 <div class="navbar">
 	<div class="navbar-inner">
 	
-	<div class="brand"><img alt="logo" style="height: 28px" src="{{ registry.uri }}img/ostora_small.png" /></div>
+	<div class="brand"><a href="https://github.com/sydorenkovd/" target="_blank"><img alt="logo" style="height: 28px" src="{{ registry.uri }}img/ostora_small.png" /></a></div>
 	
 		<div class="container">
 			<ul class="nav">
 				<li class="active">
 					<a href="{{ registry.uri }}">
 						<i class="icon-home icon-white"></i>
-						Sydorenkovd-filemanger
+						Sydorenkovd-filemanger<i class=""></i>
 					</a>
 				</li>
 				
@@ -59,19 +59,25 @@
 						Statistics
 					</a>
 				</li>
+                <li>
+                    <a href="{{ registry.uri }}about/">
+                        <i class="icon-info-sign icon-white"></i>
+                        About
+                    </a>
+                </li>
 				{% endif %}
 			</ul>
 			
 			<ul class="nav pull-right">
 				<li>
-					<span class="brand">{{ registry.ui.login }}</span>
+					<span class="brand">{{ registry.ui.login }}<i class="icon-ok-sign icon-white"></i></span>
 				</li>
 				<li style="margin-right: 30px; text-align: center">
 					<div id="user_quota"></div>
 				</li>
 				<li>
 					<a href="{{ registry.uri }}exit/">
-						<i class="icon-remove icon-white"></i>
+						<i class="icon-off icon-white"></i>
 						Exit
 					</a>
 				</li>	
