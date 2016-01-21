@@ -1,5 +1,55 @@
-<img src="{{ registry.uri }}img/uml/mvc.png" alt="альтернативный текст">
+<style>
+   .fig {
+    text-align: center; /* Выравнивание по центру */ 
+   }
+   .big3 {
+   	font-size: 18px;
+   }
+   .big2{
+   	font-size: 24px;
+   }
+   .big {
+   	font-size: 32px;
+   }
+   .border{
+   	border: 2px solid black;
+   }
+  </style>
+  <h1> FILE MANAGER </h1>
 
+<p class="big3 fig">New separate project: <a href="https://github.com/sydorenkovd/yii2-blog">mediabox-php-yii()</a></p>
+
+<h3>Oldest:</h3>
+
+<p class="big3 fig">Site: <a href="http://sydorenko.esy.es/sydorenkovd-filemanager">sydorenkovd</a></p>
+
+<h3> Requirements</h3>
+<ul>
+<li>PHP > 5.6</li>
+<li>PDO Database: MySQL, PostgreSQL, SQLite (mysql tested)</li>
+<li>JSON PHP support</li>
+<li>GD PHP support</li>
+<li>Flash player</li>
+</ul>
+
+<p>chmod 777 /upload/ /upload/_thumb/</p>
+
+<p>Database dump: /sql/fm.sql</p>
+
+<p class="big3">Login and Password:</p> 
+<p class="big3 fig"><i>sydorenkovd/filemanager</i></p>
+
+<h2>License:</h2>
+<h3>MIT</h3>
+
+<p class="big3 fig"><a href="http://localhost/SYDORENKOVD-filemanager/about/">See [COPYING] file</a>
+<p class="fig"><img src="{{ registry.uri }}img/uml/mvc.png" alt="альтернативный текст"></p>
+<ul class="big3">
+<li>A controller can send commands to the model to update the model's state (e.g., editing a document). It can also send commands to its associated view to change the view's presentation of the model.</li>
+<li>A model stores data that is retrieved according to commands from the controller and displayed in the view.</li>
+<li>A view generates an output presentation to the user based on changes in the model.</li>
+<li>A view controller generates an output view and an embedded controller</li>
+</ul><br><hr>
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -8,89 +58,35 @@
 
 	<!-- Three columns of text below the carousel -->
 	<div class="row">
-		<div class="col-lg-4">
-			<img class="img-circle" src="" alt="Generic placeholder image" width="140" height="140">
-			<h2>Heading</h2>
-			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-			<p><a class="btn btn-default" href="" role="button">View details »</a></p>
+		<div class="col-sm-4">
+			<p class="fig"><img class="img-circle" src="{{ registry.uri }}img/uml/singleton.png" alt="Generic placeholder image" width="440" height="440"></p>
+			<h2>Singleton</h2><br>
+			<h4>We actually use to make this pattern in DB conection, when we can create just one object, and chech it before every loop. It allowed us save permanent condition and don't create more different useless database objects.</h4>
+			<p><a class="btn btn-default" href="https://github.com/sydorenkovd/Design-pattern/blob/master/Creational%28generate%20objects%29/Singleton.php" role="button">View details »</a></p>
 		</div><!-- /.col-lg-4 -->
-		<div class="col-lg-4">
-			<img class="img-circle" src="" alt="Generic placeholder image" width="140" height="140">
-			<h2>Heading</h2>
-			<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+		<hr>
+		<div class="col-sm-4">
+			<p class="fig"><img class="img-circle" src="{{ registry.uri }}img/uml/a_factory.png" alt="Generic placeholder image" width="540" height="540"></p>
+			<h2>Abstract factory:</h2><br>
+			<h4>The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes. In normal usage, the client software creates a concrete implementation of the abstract factory and then uses the generic interface of the factory to create the concrete objects that are part of the theme. The client doesn't know (or care) which concrete objects it gets from each of these internal factories, since it uses only the generic interfaces of their products. This pattern separates the details of implementation of a set of objects from their general usage and relies on object composition, as object creation is implemented in methods exposed in the factory interface.</h4>
 			<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
 		</div><!-- /.col-lg-4 -->
-		<div class="col-lg-4">
-			<img class="img-circle" src="" alt="Generic placeholder image" width="140" height="140">
-			<h2>Heading</h2>
-			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		<hr>
+		<div class="col-sm-4">
+			<p class="fig"><img class="img-circle" src="{{ registry.uri }}img/uml/strategy.gif" alt="Generic placeholder image" width="540" height="540"></p>
+			<h2>Strategy</h2>
+			<h4>In computer programming, the strategy pattern (also known as the policy pattern) is a software design pattern that enables an algorithm's behavior to be selected at runtime. The strategy pattern
+				<br><br>
+<ul>
+<li>defines a family of algorithms,</li>
+<li>encapsulates each algorithm, and</li>
+<li>makes the algorithms interchangeable within that family.</li>
+</ul>
+Strategy lets the algorithm vary independently from clients that use it.[1] Strategy is one of the patterns included in the influential book Design Patterns by Gamma et al. that popularized the concept of using patterns to describe software design.</h4>
 			<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
 		</div><!-- /.col-lg-4 -->
 	</div><!-- /.row -->
-
-
-	<!-- START THE FEATURETTES -->
-
-	<hr class="featurette-divider">
-
-	<div class="row featurette">
-		<div class="col-md-7">
-			<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-			<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-		</div>
-		<div class="col-md-5">
-			<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1MjUwOTI3MzA0IHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTUyNTA5MjczMDQiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
-		</div>
-	</div>
-
-	<hr class="featurette-divider">
-
-	<div class="row featurette">
-		<div class="col-md-7 col-md-push-5">
-			<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-			<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-		</div>
-		<div class="col-md-5 col-md-pull-7">
-			<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1MjUwOTI4NTAxIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTUyNTA5Mjg1MDEiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
-		</div>
-	</div>
-
-	<hr class="featurette-divider">
-
-	<div class="row featurette">
-		<div class="col-md-7">
-			<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-			<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-		</div>
-		<div class="col-md-5">
-			<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1MjUwOTI4OTU3IHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTUyNTA5Mjg5NTciPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
-		</div>
-	</div>
-
-	<hr class="featurette-divider">
-
-	<!-- /END THE FEATURETTES -->
-
-
-	<!-- FOOTER -->
+<hr>
 	<footer>
-		<p class="pull-right"><a href="http://getbootstrap.com/examples/carousel/#">Back to top</a></p>
-		<p>© 2015 Company, Inc. · <a href="http://getbootstrap.com/examples/carousel/#">Privacy</a> · <a href="http://getbootstrap.com/examples/carousel/#">Terms</a></p>
-	</footer>
-
-</div><!-- /.container -->
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="./Carousel Template for Bootstrap_files/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="./Carousel Template for Bootstrap_files/bootstrap.min.js"></script>
-<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-<script src="./Carousel Template for Bootstrap_files/holder.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="./Carousel Template for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
-
-
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg></body></html>
+		<p class="fig"><span class="big2">© 2015 Company, Inc. · </span><a href="https://github.com/sydorenkovd/"><span class="big">Sydorenkovd&trade;</span></a></p>
+	</footer><br><hr>
