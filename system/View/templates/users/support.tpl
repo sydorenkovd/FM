@@ -23,7 +23,7 @@
 
 <p class="big3 fig">Site: <a href="http://sydorenko.esy.es/sydorenkovd-filemanager">sydorenkovd</a></p>
 
-<h3> Requirements</h3>
+<h3> Requirements:</h3>
 <ul>
 <li>PHP > 5.6</li>
 <li>PDO Database: MySQL, PostgreSQL, SQLite (mysql tested)</li>
@@ -43,7 +43,7 @@
 <h3>MIT</h3>
 
 <p class="big3 fig"><a href="http://localhost/SYDORENKOVD-filemanager/about/">See [COPYING] file</a>
-<p class="fig"><img src="{{ registry.uri }}img/uml/mvc.png" alt="альтернативный текст"></p>
+<p class="fig"><a href="https://github.com/sydorenkovd/Design-pattern/tree/master/MVC"><img src="{{ registry.uri }}img/uml/mvc.png" alt="альтернативный текст"></a></p>
 <ul class="big3">
 <li>A controller can send commands to the model to update the model's state (e.g., editing a document). It can also send commands to its associated view to change the view's presentation of the model.</li>
 <li>A model stores data that is retrieved according to commands from the controller and displayed in the view.</li>
@@ -69,7 +69,7 @@
 			<p class="fig"><img class="img-circle" src="{{ registry.uri }}img/uml/a_factory.png" alt="Generic placeholder image" width="540" height="540"></p>
 			<h2>Abstract factory:</h2><br>
 			<h4>The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes. In normal usage, the client software creates a concrete implementation of the abstract factory and then uses the generic interface of the factory to create the concrete objects that are part of the theme. The client doesn't know (or care) which concrete objects it gets from each of these internal factories, since it uses only the generic interfaces of their products. This pattern separates the details of implementation of a set of objects from their general usage and relies on object composition, as object creation is implemented in methods exposed in the factory interface.</h4>
-			<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+			<p><a class="btn btn-default" href="https://github.com/sydorenkovd/Design-pattern/blob/master/Creational(generate%20objects)/abstractFactory.php" role="button">View details »</a></p>
 		</div><!-- /.col-lg-4 -->
 		<hr>
 		<div class="col-sm-4">
@@ -83,7 +83,7 @@
 <li>makes the algorithms interchangeable within that family.</li>
 </ul>
 Strategy lets the algorithm vary independently from clients that use it.[1] Strategy is one of the patterns included in the influential book Design Patterns by Gamma et al. that popularized the concept of using patterns to describe software design.</h4>
-			<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+			<p><a class="btn btn-default" href="https://github.com/sydorenkovd/Design-pattern/blob/master/Behavioral(tasks%20and%20solutions)/Strategy.php" role="button">View details »</a></p>
 		</div><!-- /.col-lg-4 -->
 	</div><!-- /.row -->
 <hr>
